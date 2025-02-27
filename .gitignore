@@ -1,0 +1,26 @@
+# Ignore build artifacts and dependencies
+*.xcworkspace/
+*.xcodeproj/
+*.xcuserdata/
+*.xcframework/
+
+# Ignore specific framework directory
+SpeechDiarizationStarter/SpeechDiarizationStarter/SherpaFiles/onnxruntime.xcframework/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled binaries
+*.o
+*.so
+*.a
+*.dylib
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.swp
+*.swo
+*.swn
