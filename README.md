@@ -10,6 +10,9 @@ This repository aims to refactor and simplify the SwiftUI example provided by [k
 
 If you clone and attempt to build this project immediately, you will encounter errors due to the absence of the required `onnxruntime` framework, which is too large to include directly in this repository.
 
+If you'd like to test the app. Please add a file titled "`Clip.mp4`" or change line 16 in ContentView
+
+
 ### Download Required Framework
 
 You can download the `onnxruntime` framework from the following link:
