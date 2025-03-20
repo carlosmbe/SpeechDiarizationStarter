@@ -1,14 +1,31 @@
-I'm still working on this project. This README is not complete. 
+# SwiftUI Speech Diarization Example (Work in Progress)
 
-Essentaily this project is an attempt to refactor and simplify the SwiftUI Example for [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) with a focus on Speech Diarization.
+**Note:** This project is currently under development and this README is incomplete.
 
-If you clone this project and try to run it. You will have an error because this repo does not have the `onnxruntime` framework. It was too large to push to remote. 
-You can download it with,
+## Project Overview
 
- `https://github.com/csukuangfj/onnxruntime-libs/releases/download/v1.17.1/onnxruntime.xcframework-1.17.1.tar.bz2` Then extract and copy it to the XCode project.
+This repository aims to refactor and simplify the SwiftUI example provided by [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx), specifically focusing on Speech Diarization.
 
-Alternatively, just clone [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) and follow these [build instructions](https://k2-fsa.github.io/sherpa/onnx/ios/build-sherpa-onnx-swift.html)
+## Getting Started
 
+If you clone and attempt to build this project immediately, you will encounter errors due to the absence of the required `onnxruntime` framework, which is too large to include directly in this repository.
 
+### Download Required Framework
 
+You can download the `onnxruntime` framework from the following link:
 
+[Download onnxruntime.xcframework-1.17.1.tar.bz2](https://github.com/csukuangfj/onnxruntime-libs/releases/download/v1.17.1/onnxruntime.xcframework-1.17.1.tar.bz2)
+
+Extract the downloaded archive and copy the `onnxruntime.xcframework` to your Xcode project directory.
+
+### Alternative Method
+
+Alternatively, you can clone the original [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) repository and follow its detailed [build instructions](https://k2-fsa.github.io/sherpa/onnx/ios/build-sherpa-onnx-swift.html).
+
+## Contributing
+
+Contributions and suggestions are welcome as the project is actively evolving.
+
+---
+
+Updates and additional documentation will be provided as development progresses.
