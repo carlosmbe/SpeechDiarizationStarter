@@ -13,11 +13,11 @@ I wrote a [companion article](https://carlosmbe.hashnode.dev/running-speech-mode
 
 If you clone and attempt to build this project immediately, you will encounter errors due to the absence of the required `onnxruntime` framework, which is too large to include directly in this repository.
 
-After adding the `onnxruntime` framework, you may encounter an error saying folder `ios-arm64` or `ios-arm64_x86_64-simulator` dones't exist. You will need to rebuild and replace `Sherpa-Onnx.xcframework`. Follow the steps in **Building Directly From Sherpa Onnx**
+After adding the `onnxruntime` framework, you may still encounter errors. You will need to build and add `Sherpa-Onnx.xcframework` to your project. Follow the steps in **Building Directly From Sherpa Onnx**
 
 Follow the same steps if don't have the `Sherpa-Onnx.xcframework` in your project.
 
-After getting a successful build. You can test the app by adding a file titled "`Clip.mp4`" or changing line 16 in `ContentView`
+After getting a successful build. You can test the app by picking a file containing Audio using the File Picker, otherwise you can change `line 18` in `ContentView` to hardcode a file in your bundle for testing.
 
 ### Download Required Framework
 
@@ -41,6 +41,16 @@ Clone the original [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) r
 
 <img width="334" alt="Screenshot 2025-04-10 at 1 01 38 PM" src="https://github.com/user-attachments/assets/aa1504b1-019f-4d49-8756-86d7915c3421" />
 
+## The Actual App
+
+The App requires you to select an Audio/Video file
+
+It then converts it to a format that the speech diarization model accepts
+
+Afterwards, run the model and the results will eventually replace the placehodler text
+
+
+https://github.com/user-attachments/assets/554b8154-c580-409a-958c-81aaca0c3a21
 
 ## Contributing
 
