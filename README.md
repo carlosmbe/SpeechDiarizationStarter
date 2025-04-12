@@ -13,7 +13,9 @@ I wrote a [companion article](https://carlosmbe.hashnode.dev/running-speech-mode
 
 If you clone and attempt to build this project immediately, you will encounter errors due to the absence of the required `onnxruntime` framework, which is too large to include directly in this repository.
 
-If after adding the `onnxruntime` framework, you encounter an error saying folder `ios-arm64` or `ios-arm64_x86_64-simulator` dones't exist. You will need to rebuild and replace `Sherpa-Onnx.xcframework`. Follow the steps in **Building Directly From Sherpa Onnx**
+After adding the `onnxruntime` framework, you may encounter an error saying folder `ios-arm64` or `ios-arm64_x86_64-simulator` dones't exist. You will need to rebuild and replace `Sherpa-Onnx.xcframework`. Follow the steps in **Building Directly From Sherpa Onnx**
+
+Follow the same steps if don't have the `Sherpa-Onnx.xcframework` in your project.
 
 After getting a successful build. You can test the app by adding a file titled "`Clip.mp4`" or changing line 16 in `ContentView`
 
