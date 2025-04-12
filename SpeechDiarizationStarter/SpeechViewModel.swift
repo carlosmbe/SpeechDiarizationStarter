@@ -6,14 +6,14 @@
 //
 
 import AVFoundation
-
 import Foundation
 
 class SDViewModel : ObservableObject{
     
     let segmentationModel = getResource("SpeechModel", "onnx")
     let embeddingExtractorModel = getResource("3dspeaker_speech_eres2net_base_sv_zh-cn_3dspeaker_16k", "onnx")
- 
+    
+    @Published var running = false
     
     func runDiarization(waveFileName: String, numSpeakers: Int = 0, fullPath: URL? = nil)  async -> [SherpaOnnxOfflineSpeakerDiarizationSegmentWrapper] {
        
@@ -43,6 +43,7 @@ class SDViewModel : ObservableObject{
         let array: [Float]! = audioFileBuffer?.array()
         
         print("Started!")
+        running = true
         
         //Original was not async
       //  let segments = sd.process(samples: array)
@@ -54,6 +55,7 @@ class SDViewModel : ObservableObject{
           print("\(segments[i].start) -- \(segments[i].end) speaker_\(segments[i].speaker)")
         }
         
+        running = false
         return segments
     }
     

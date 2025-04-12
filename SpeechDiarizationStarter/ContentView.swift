@@ -10,7 +10,7 @@ import UniformTypeIdentifiers
 
 struct ContentView: View {
     
-    @State private var SpeechViewModel = SDViewModel()
+    @ObservedObject private var SpeechViewModel = SDViewModel()
     @State private var speechResults = "Result of Speech Diarrization Will Go Here"
     
     //MARK: If you don't want to pick a file, you can add a file to your bundle and hardcode it to MediaURL as shown in the commented out line
@@ -67,6 +67,10 @@ struct ContentView: View {
                 }
             }
             .disabled(convertedAudioURL == nil)
+            
+            if SpeechViewModel.running {
+                ProgressView()
+            }
             
             Text(speechResults)
             
