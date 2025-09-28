@@ -2,6 +2,8 @@
 
 **Note:** This project is currently under development and this README will be periodcally updated.
 
+**Update Sept 28, 2025** Over summer, a clever person ported the Speech Diarization model to CoreML. Its neatly wrapped and abstracted in the [FluidAudio](https://github.com/FluidInference/FluidAudio) Library. The barrier for entry for using that API should be lower than this one. However, if you're doing some pretty advanced and nuanced code stuff. This project will still be useful as FluidAudio is built atop of Sherpa. 
+
 ## Project Overview
 
 This repository aims to refactor and simplify the SwiftUI example provided by [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx), specifically focusing on Speech Diarization.
